@@ -1,0 +1,82 @@
+<!-- En una página con muchas imágenes mostrar una alerta cuando esté
+cargado el DOM y otra después que las imágenes se hayan cargado.
+
+Tip: Investigar el evento window.onload
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 1</title>
+    <style>
+    	#gallery {
+        margin: 2em auto;
+        max-width: 100%;
+        display: flex;
+        }
+        #gallery figure {
+        margin: 0 1.5%;
+        width: 18%;
+        }
+        #gallery img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        cursor: pointer;
+        }
+        h1{
+        	text-align:center;
+        }
+    </style>
+  </head>
+  <body>
+
+  	<h1>Galería de imágenes</h1>
+  	 <div id="gallery">
+         <figure><img src="1.jpg" alt=""></figure>
+         <figure><img src="2.jpg" alt=""></figure>
+         <figure><img src="3.jpg" alt=""></figure>
+         <figure><img src="1.jpg" alt=""></figure>
+         <figure><img src="2.jpg" alt=""></figure>
+      </div> 
+       <div id="gallery">
+         <figure><img src="1.jpg" alt=""></figure>
+         <figure><img src="2.jpg" alt=""></figure>
+         <figure><img src="3.jpg" alt=""></figure>
+         <figure><img src="1.jpg" alt=""></figure>
+         <figure><img src="2.jpg" alt=""></figure>
+      </div>  
+       <div id="gallery">
+         <figure><img src="1.jpg" alt=""></figure>
+         <figure><img src="2.jpg" alt=""></figure>
+         <figure><img src="3.jpg" alt=""></figure>
+         <figure><img src="1.jpg" alt=""></figure>
+         <figure><img src="2.jpg" alt=""></figure>
+      </div>  
+       <div id="gallery">
+         <figure><img src="1.jpg" alt=""></figure>
+         <figure><img src="2.jpg" alt=""></figure>
+         <figure><img src="3.jpg" alt=""></figure>
+         <figure><img src="1.jpg" alt=""></figure>
+         <figure><img src="2.jpg" alt=""></figure>
+      </div>  
+       <div id="gallery">
+         <figure><img src="1.jpg" alt=""></figure>
+         <figure><img src="2.jpg" alt=""></figure>
+         <figure><img src="3.jpg" alt=""></figure>
+         <figure><img src="1.jpg" alt=""></figure>
+         <figure><img src="2.jpg" alt=""></figure>
+      </div>  
+  	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+      <script>
+     
+$(document).ready(function() {
+    alert("La carga del DOM esta lista!!!");
+});
+
+      </script>
+  
+  </body>
+</html>
