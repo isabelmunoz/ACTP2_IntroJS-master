@@ -1,0 +1,17 @@
+.gallery {
+  margin: 2em auto;
+  max-width: 100%;
+  
+}
+
+.gallery img {
+  max-width: 20%;
+  height: 20%;
+  display: block;
+  cursor: pointer;
+  margin: 4px;
+  float: left;
+}
+h1{
+	text-align: center;
+}

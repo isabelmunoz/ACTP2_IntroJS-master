@@ -10,72 +10,53 @@ Tip: Investigar el evento window.onload
   <head>
     <meta charset="utf-8">
     <title>Ejercicio 1</title>
-    <style>
-    	#gallery {
-        margin: 2em auto;
-        max-width: 100%;
-        display: flex;
-        }
-        #gallery figure {
-        margin: 0 1.5%;
-        width: 18%;
-        }
-        #gallery img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        cursor: pointer;
-        }
-        h1{
-        	text-align:center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
   </head>
   <body>
 
   	<h1>Galería de imágenes</h1>
-  	 <div id="gallery">
-         <figure><img src="1.jpg" alt=""></figure>
-         <figure><img src="2.jpg" alt=""></figure>
-         <figure><img src="3.jpg" alt=""></figure>
-         <figure><img src="1.jpg" alt=""></figure>
-         <figure><img src="2.jpg" alt=""></figure>
-      </div> 
-       <div id="gallery">
-         <figure><img src="1.jpg" alt=""></figure>
-         <figure><img src="2.jpg" alt=""></figure>
-         <figure><img src="3.jpg" alt=""></figure>
-         <figure><img src="1.jpg" alt=""></figure>
-         <figure><img src="2.jpg" alt=""></figure>
+  	 <div class="gallery">
+         <img src="1.jpg" alt="">
+         <img src="2.jpg" alt="">
+         <img src="3.jpg" alt="">
+         <img src="4.jpg" alt="">
+         <img src="5.jpg" alt="">
+         <img src="6.jpg" alt="">
+         <img src="7.jpg" alt="">
+         <img src="8.jpg" alt="">
+         <img src="9.jpg" alt="">
+         <img src="10.jpg" alt="">
+         <img src="1.jpg" alt="">
+         <img src="2.jpg" alt="">
+         <img src="3.jpg" alt="">
+         <img src="4.jpg" alt="">
+         <img src="5.jpg" alt="">
+         <img src="6.jpg" alt="">
+         <img src="7.jpg" alt="">
+         <img src="8.jpg" alt="">
+         <img src="9.jpg" alt="">
+         <img src="10.jpg" alt="">
+         <img src="1.jpg" alt="">
+         <img src="2.jpg" alt="">
+         <img src="3.jpg" alt="">
+         <img src="4.jpg" alt="">
+         <img src="5.jpg" alt="">
+         <img src="6.jpg" alt="">
+         <img src="7.jpg" alt="">
+         <img src="8.jpg" alt="">
+         <img src="9.jpg" alt="">
+         <img src="10.jpg" alt="">
       </div>  
-       <div id="gallery">
-         <figure><img src="1.jpg" alt=""></figure>
-         <figure><img src="2.jpg" alt=""></figure>
-         <figure><img src="3.jpg" alt=""></figure>
-         <figure><img src="1.jpg" alt=""></figure>
-         <figure><img src="2.jpg" alt=""></figure>
-      </div>  
-       <div id="gallery">
-         <figure><img src="1.jpg" alt=""></figure>
-         <figure><img src="2.jpg" alt=""></figure>
-         <figure><img src="3.jpg" alt=""></figure>
-         <figure><img src="1.jpg" alt=""></figure>
-         <figure><img src="2.jpg" alt=""></figure>
-      </div>  
-       <div id="gallery">
-         <figure><img src="1.jpg" alt=""></figure>
-         <figure><img src="2.jpg" alt=""></figure>
-         <figure><img src="3.jpg" alt=""></figure>
-         <figure><img src="1.jpg" alt=""></figure>
-         <figure><img src="2.jpg" alt=""></figure>
-      </div>  
-  	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+       
       <script>
-     
-$(document).ready(function() {
-    alert("La carga del DOM esta lista!!!");
-});
 
+          $( document ).ready(function() {
+              alert("La carga del DOM esta lista!!!")
+          });
+           $( window ).on( "load", function() {
+              alert("Las imágenes estan listas!!!");
+          });
       </script>
   
   </body>
