@@ -1,17 +1,29 @@
-.gallery {
-  margin: 2em auto;
+#gallery {
+  margin: 2em 9em;
   max-width: 100%;
   
 }
 
-.gallery img {
+ img {
   max-width: 20%;
   height: 20%;
   display: block;
   cursor: pointer;
-  margin: 4px;
+  margin: 8px;
   float: left;
+  -webkit-filter: grayscale(0);
 }
+ .alternar{
+  -webkit-filter: grayscale(1);
+  transition: 1s;
+} 
+
+.alternar2{
+  -webkit-filter: grayscale(0);
+  transition: 1s;
+} 
 h1{
 	text-align: center;
 }
+
+

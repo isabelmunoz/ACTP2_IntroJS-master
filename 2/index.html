@@ -14,46 +14,35 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
     <title>Ejercicio 1</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+ 
   </head>
   <body>
 
   	<h1>Galería de imágenes</h1>
-  	 <div class="gallery">
-         <img src="1.jpg" alt="">
-         <img src="2.jpg" alt="">
-         <img src="3.jpg" alt="">
-         <img src="4.jpg" alt="">
-         <img src="5.jpg" alt="">
-         <img src="6.jpg" alt="">
-         <img src="7.jpg" alt="">
-         <img src="8.jpg" alt="">
-         <img src="9.jpg" alt="">
-         <img src="10.jpg" alt="">
-         <img src="1.jpg" alt="">
-         <img src="2.jpg" alt="">
-         <img src="3.jpg" alt="">
-         <img src="4.jpg" alt="">
-         <img src="5.jpg" alt="">
-         <img src="6.jpg" alt="">
-         <img src="7.jpg" alt="">
-         <img src="8.jpg" alt="">
-         <img src="9.jpg" alt="">
-         <img src="10.jpg" alt="">
-         <img src="1.jpg" alt="">
-         <img src="2.jpg" alt="">
-         <img src="3.jpg" alt="">
-         <img src="4.jpg" alt="">
-         <img src="5.jpg" alt="">
-         <img src="6.jpg" alt="">
-         <img src="7.jpg" alt="">
-         <img src="8.jpg" alt="">
-         <img src="9.jpg" alt="">
-         <img src="10.jpg" alt="">
+  	 <div id="gallery">
+         <img class="alternar" src="1.jpg" alt="">
+         <img class="alternar" src="2.jpg" alt="">
+         <img class="alternar" src="3.jpg" alt="">
+         <img class="alternar" src="4.jpg" alt="">
+         <img class="alternar" src="5.jpg" alt="">
+         <img class="alternar" src="6.jpg" alt="">
+         <img class="alternar" src="7.jpg" alt="">
+         <img class="alternar" src="8.jpg" alt="">
+         <img class="alternar" src="9.jpg" alt="">
+         <img class="alternar" src="10.jpg" alt="">
+         <img class="alternar" src="1.jpg" alt="">
+         <img class="alternar" src="2.jpg" alt="">
       </div>  
        
       <script>
-
-       
+    
+       $(document).ready(function(){
+    $('img').click(function(){
+        $(this).toggleClass('alternar alternar2');
+    });
+});
+      
+         
       </script>
   
   </body>
